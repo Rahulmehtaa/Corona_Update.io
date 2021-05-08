@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
+    <title>
+        Coronavirus (COVID-19) Map: Cases Worldwide
+    </title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #map{
+            height: 100vh;
+            width: 100vw;
+        }
+    </style>
+</head>
+<body>
+    <div id='map' ></div>
+</body>
+
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoicmFodWwtNC11aCIsImEiOiJja2syZzgxdDIwaXFiMnVyemdxbWhpdXB0In0.nhGhav_-EeU65Sw46uBfNg';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/dark-v10',
+    zoom: 1,
+    center: [0,20]
+  });
+</script>
+<script src="index.js"></script>
+
+</html>
